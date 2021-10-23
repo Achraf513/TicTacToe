@@ -1,0 +1,22 @@
+<div [class]="{tictoe:true,disable:gameEnded}">
+    <div class="row">
+        <div [class]="{'me': positions[0]==1, 'enemy': positions[0]==-1, 'block':true}" (click)="selectTile(0)"></div>
+        <div [class]="{'me': positions[1]==1, 'enemy': positions[1]==-1, 'block':true}" (click)="selectTile(1)"></div>
+        <div [class]="{'me': positions[2]==1, 'enemy': positions[2]==-1, 'block':true}" (click)="selectTile(2)"></div>
+    </div>
+    <div class="row">
+        <div [class]="{'me': positions[3]==1, 'enemy': positions[3]==-1, 'block':true}" (click)="selectTile(3)"></div>
+        <div [class]="{'me': positions[4]==1, 'enemy': positions[4]==-1, 'block':true}" (click)="selectTile(4)"></div>
+        <div [class]="{'me': positions[5]==1, 'enemy': positions[5]==-1, 'block':true}" (click)="selectTile(5)"></div>
+    </div>
+    <div class="row">
+        <div [class]="{'me': positions[6]==1, 'enemy': positions[6]==-1, 'block':true}" (click)="selectTile(6)"></div>
+        <div [class]="{'me': positions[7]==1, 'enemy': positions[7]==-1, 'block':true}" (click)="selectTile(7)"></div>
+        <div [class]="{'me': positions[8]==1, 'enemy': positions[8]==-1, 'block':true}" (click)="selectTile(8)"></div>
+    </div>
+</div>
+<div>
+    <p *ngIf="gameEnded && !iLost">You won !!</p>
+    <p *ngIf="gameEnded && iLost">You lost :(</p>
+    <button [class]="{'Retry':true,'Ready':ready}" *ngIf="gameEnded" (click)="retry()">{{btnText}}</button>
+</div>

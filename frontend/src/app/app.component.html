@@ -1,0 +1,4 @@
+<app-room-manager *ngIf="!insideARoom"></app-room-manager>
+<app-tic-toe *ngIf="insideARoom">
+</app-tic-toe>
+<router-outlet></router-outlet>

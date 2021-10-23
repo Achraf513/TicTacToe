@@ -1,0 +1,11 @@
+<div class="formDiv">
+    <form>
+        <p>Please Enter an existing room name in order to join your firend, else provide a new room name and send it to
+            your friend in order to join you!</p>
+        <input type="text" id="fname" name="fname" placeholder="Room ID" [formControl]="roomID">
+        <div class="btns">
+            <button type="button" class="submitBtn createBtn" (click)="createRoom()">Create</button>
+            <button type="button" class="submitBtn joinBtn" (click)="joinRoom()">Join</button>
+        </div>
+    </form>
+</div>

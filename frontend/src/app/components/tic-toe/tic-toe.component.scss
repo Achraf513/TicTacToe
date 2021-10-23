@@ -1,0 +1,56 @@
+.row {
+  display: flex;
+}
+.block {
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: rgb(174, 174, 174);
+}
+.block:hover {
+  background-color: rgb(136, 180, 182);
+}
+.tictoe {
+  margin: auto !important;
+  width: 315px;
+}
+.me {
+  background-color: rgb(77, 204, 140);
+}
+.me::before {
+  content: "X";
+  font-size: 50px;
+}
+.me:hover {
+  background-color: rgb(77, 204, 140);
+}
+.enemy {
+  background-color: rgb(255, 0, 76);
+}
+.enemy::before {
+  content: "O";
+  font-size: 50px;
+}
+.enemy:hover {
+  background-color: rgb(255, 0, 76);
+}
+.disable {
+  pointer-events: none;
+}
+.Retry {
+  border: none;
+  width: 100px;
+  height: 35px;
+  font-weight: 400;
+  border-radius: 25px;
+  background-color: rgb(223, 64, 36);
+}
+p {
+  color: white;
+  font-size: 25px;
+}
+.Ready {
+  background-color: rgb(147, 224, 92);
+}
